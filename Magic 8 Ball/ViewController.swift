@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
 
     @IBAction func askButtonPressed(_ sender: Any) {
-        imageView.image = ballArray[Int.random(in: 0 ... 4)]
+        imageView.image = ballArray.randomElement()
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
