@@ -18,20 +18,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="AppBreweryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ScE-Ry-hLe">
-                                <rect key="frame" x="0.0" y="0.0" width="394" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tRZ-rC-n0c">
-                                <rect key="frame" x="204" y="419" width="190" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tRZ-rC-n0c">
+                                <rect key="frame" x="112" y="418.5" width="190" height="59"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to Code By Making Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4g-fO-HTC">
+                                <rect key="frame" x="96" y="507.5" width="222" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ScE-Ry-hLe" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3se-0U-ef3"/>
+                            <constraint firstItem="tRZ-rC-n0c" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GAf-Rf-UWA"/>
                             <constraint firstItem="ScE-Ry-hLe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HAC-TL-oDU"/>
-                            <constraint firstItem="ScE-Ry-hLe" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="U3C-wx-4AW"/>
+                            <constraint firstItem="x4g-fO-HTC" firstAttribute="top" secondItem="tRZ-rC-n0c" secondAttribute="bottom" constant="30" id="L9M-J4-pIw"/>
+                            <constraint firstItem="x4g-fO-HTC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TJE-7C-k1v"/>
+                            <constraint firstItem="ScE-Ry-hLe" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="U3C-wx-4AW"/>
                             <constraint firstAttribute="bottom" secondItem="ScE-Ry-hLe" secondAttribute="bottom" id="Wh7-Ja-dRr"/>
+                            <constraint firstItem="tRZ-rC-n0c" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bzZ-8m-dpu"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -43,6 +52,9 @@
     <resources>
         <image name="AppBreweryBackground" width="577" height="873"/>
         <image name="AppBreweryLogo" width="190" height="59"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
