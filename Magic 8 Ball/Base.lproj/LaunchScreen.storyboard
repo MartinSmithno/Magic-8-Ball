@@ -16,16 +16,33 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="AppBreweryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ScE-Ry-hLe">
+                                <rect key="frame" x="0.0" y="0.0" width="394" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tRZ-rC-n0c">
+                                <rect key="frame" x="204" y="419" width="190" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ScE-Ry-hLe" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3se-0U-ef3"/>
+                            <constraint firstItem="ScE-Ry-hLe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HAC-TL-oDU"/>
+                            <constraint firstItem="ScE-Ry-hLe" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="U3C-wx-4AW"/>
+                            <constraint firstAttribute="bottom" secondItem="ScE-Ry-hLe" secondAttribute="bottom" id="Wh7-Ja-dRr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
+        <image name="AppBreweryBackground" width="577" height="873"/>
+        <image name="AppBreweryLogo" width="190" height="59"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
